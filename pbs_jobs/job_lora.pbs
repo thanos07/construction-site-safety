@@ -1,0 +1,15 @@
+#!/bin/bash
+#PBS -N cs_lora
+#PBS -l select=1:ncpus=4:mem=16gb
+#PBS -l walltime=08:00:00
+#PBS -j oe
+#PBS -o /Data1/cse_24203016/construction_site/logs/job_lora.log
+
+cd /Data1/cse_24203016/construction_site
+
+# Full path to conda environment python
+PYTHON=/Data1/cse_24203016/.conda/envs/construction/bin/python
+
+export CUDA_VISIBLE_DEVICES=MIG-110b5c2d-162d-5ada-814c-2aef6f9812f1
+
+$PYTHON scripts/09_lora_finetune.py

@@ -1,0 +1,6 @@
+{
+  "provider": "CPUExecutionProvider",
+  "latency_ms": 75.32906764186919,
+  "fps": 13.27508797472734,
+  "n_runs": 100
+}

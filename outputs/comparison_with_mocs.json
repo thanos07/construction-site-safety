@@ -1,0 +1,35 @@
+{
+  "your_model": {
+    "mAP50": 0.3809407765409692,
+    "mAP50-95": 0.2833851819391368,
+    "precision": 0.41344567847334973,
+    "recall": 0.4085258417153553
+  },
+  "mocs_baselines": {
+    "YOLO-v3 (Darknet53)": {
+      "mAP": 39.05,
+      "AP50": 65.59,
+      "FPS": 27.03
+    },
+    "Faster R-CNN (ResNet50+FPN)": {
+      "mAP": 50.64,
+      "AP50": 74.65,
+      "FPS": 8.39
+    },
+    "Mask R-CNN (ResNet50+FPN)": {
+      "mAP": 50.83,
+      "AP50": 74.89,
+      "FPS": 7.66
+    },
+    "PointRend (ResNet50+FPN)": {
+      "mAP": 51.04,
+      "AP50": 74.79,
+      "FPS": 8.87
+    },
+    "TridentFast (ResNet50)": {
+      "mAP": 50.69,
+      "AP50": 73.08,
+      "FPS": 4.05
+    }
+  }
+}

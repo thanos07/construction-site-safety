@@ -1,0 +1,9 @@
+#!/bin/bash
+#PBS -N cs_autoannotate
+#PBS -l select=1:ncpus=8:mem=32gb
+#PBS -l walltime=10:00:00
+#PBS -j oe
+#PBS -o /Data1/cse_24203016/construction_site/logs/job_autoannotate.log
+cd /Data1/cse_24203016/construction_site
+
+/Data1/cse_24203016/.conda/envs/construction/bin/python3 scripts/06_auto_annotate.py

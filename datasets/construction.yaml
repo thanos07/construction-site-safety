@@ -1,0 +1,24 @@
+names:
+- worker
+- tower crane
+- hanging hook
+- truck crane
+- other vehicle
+- bulldozer
+- excavator
+- truck
+- loader
+- concrete truck
+- pile driver
+- hard hat
+- safety vest
+- safety harness
+- gloves
+- safety boots
+- face mask
+- safety goggles
+nc: 18
+path: /Data1/cse_24203016/construction_site/datasets/construction
+test: test/images
+train: train/images
+val: val/images

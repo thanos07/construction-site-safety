@@ -1,0 +1,55 @@
+{
+  "lora_scores": {
+    "BLEU-4": 5.03,
+    "METEOR": 30.95,
+    "ROUGE-L": 25.6
+  },
+  "base_scores": {
+    "BLEU-4": 6.56,
+    "METEOR": 21.94,
+    "ROUGE-L": 24.54
+  },
+  "n_evaluated": 500,
+  "sample_outputs": [
+    {
+      "gt": "The rear view of a mobile crane.",
+      "lora": "In the foreground, a mobile crane is positioned on a dirt road, with its boom extended towards the right side of the frame. Behind the crane, there is a stack of rebars on the right. In the background, a tower crane is visible."
+    },
+    {
+      "gt": "A stone pit. Fractured stones are covering the hill. There are two excavators on the right on top of the hill digging the pile of stones. There are more than 10 workers with red hard hats scattered on the slope. ",
+      "lora": "The image shows a construction site with a large pile of gravel in the center. There are approximately 20 workers visible, wearing safety gear, engaged in various activities on the site. An excavator is positioned on the right side of the pile, with its arm extended over the pile."
+    },
+    {
+      "gt": "An excavator is in the center of the image. There is a person walking on the left, and a mobile crane on the right. The mobile crane is hidden by the excavator, but the boom and hook block is visible. A river is in the background.",
+      "lora": "The image shows an orange Doosan excavator positioned on a dirt surface with its bucket resting on the ground. To the left of the excavator, a worker wearing a red shirt and blue jeans is walking away from the camera. In the background, a tower crane is visible, with its boom extended upwards."
+    },
+    {
+      "gt": "Six workers are pouring concrete using a hose at night. The worker at the right is wearing a yellow hard hat while a worker at the left is wearing a red hard hat. The worker with a red hard hat is occluded with another worker with a camouflage suit.",
+      "lora": "The image shows a construction site where six workers are engaged in activities related to concrete pouring. Two workers in the foreground are handling a concrete bucket, while another worker in the background is observing or assisting. The third worker is standing and appears to be adjusting or adjusting the rebar structure. The fourth worker is bending over, possibly tying rebar or preparing for the concrete pouring process. The fifth worker is holding a wooden support beam, possibly adjusting or securing the rebars. The background features a dense grid of rebar on the ground, and there are wooden planks and scaffolding around the workers."
+    },
+    {
+      "gt": "A white concrete truck is in the middle of the image. Two workers are standing on the left of the image. \nOne worker is wearing a blue safety hard hat, while the face of the other worker is occluded by the concrete truck. ",
+      "lora": "The image shows a concrete mixer truck positioned in the foreground, with its bucket raised and filled with concrete. Two workers wearing safety gear are visible; one is standing on the left side of the truck, and the other is on the right side, both wearing hard hats. Behind them, a large pile of rocks is visible."
+    },
+    {
+      "gt": "Five pieces of construction equipment are working on a construction site. Two excavators are digging and loading the trucks. \nThere are three dump trucks in total in the image. A person is standing on the right of the image. There are several building at the far end of the image.",
+      "lora": "The image shows a construction site with a red dump truck in the center, positioned on a mound of earth. To the left, an excavator is visible, and to the right, a dump truck is parked. In the midground, there are two more dump trucks, one of which appears to be an orange dump truck. The ground is muddy with tire tracks, and there are piles of excavated soil throughout the site."
+    },
+    {
+      "gt": "A gigantic concrete water canal is in the image. There are about ten people in the canal. ",
+      "lora": "The image shows a large construction site with a long, flat concrete foundation. There are at least ten workers visible on the foundation, engaged in various activities. The site is surrounded by a fence, and in the background, there are trees and power lines."
+    },
+    {
+      "gt": "The image of a construction site. An excavator is loading a piece of metal board to a dump truck parked next to it.\nThere is another dump truck entering the construction site from the gate.",
+      "lora": "In the foreground, an excavator is positioned on the left, with its bucket raised above a pile of dirt. To the right, a dump truck is parked on a dirt road. Behind the excavator, another yellow truck is visible."
+    },
+    {
+      "gt": "Many bundles of rebars are on the ground. Some portion of the rebars is covered with blue cloth. \nA worker with a yellow hard hat and a safety vest at the left is processing rebars with a machine. There is a shed in the image. \nThere are two other workers with yellow hard hats and safety vest on the right of the image. There is an unfinished concrete building at the background. ",
+      "lora": "The image shows a worker wearing an orange safety vest and a white hard hat standing on a pile of rebars, with a blue tarp covering the ground. In the background, there is a multi-story building under construction with scaffolding."
+    },
+    {
+      "gt": "There are five excavators and a dump truck at the construction site. Three excavators are working in mud. \nThere are two tower cranes and several tall buildings at the background.",
+      "lora": "In the foreground, there is a yellow excavator with the brand \"KATO\" on its side, positioned on muddy terrain. Behind the excavator, there are two more excavators. In the background, a high-rise building under construction is visible."
+    }
+  ]
+}

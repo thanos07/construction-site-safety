@@ -1,0 +1,28 @@
+# Large data files — never push these
+data/constructionsite10k/images/
+data/constructionsite10k/*.parquet
+models/florence2-base/
+models/groundingdino/*.pth
+models/sam2/*.pt
+GroundingDINO/
+sam2/
+
+# Model weights — too large for GitHub (use Git LFS or exclude)
+experiments/yolov8n_construction/weights/*.pt
+experiments/yolov8n_construction/train_batch*.jpg
+
+# Keep ONNX if small enough (11.7MB is fine)
+# experiments/yolov8n_construction/weights/best.onnx
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.conda/
+*.egg-info/
+
+# Logs (optional — you may want to keep these)
+# logs/
+
+# Jupyter
+.ipynb_checkpoints/

@@ -1,0 +1,10 @@
+{
+  "our_scores": {
+    "BLEU-4": 6.56,
+    "METEOR": 21.94,
+    "ROUGE-L": 24.54,
+    "BERTScore-F1": 88.36
+  },
+  "n_test": 3004,
+  "note": "BERTScore in standard bert-score library scale (0-100)"
+}

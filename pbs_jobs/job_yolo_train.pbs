@@ -1,0 +1,15 @@
+#!/bin/bash
+#PBS -N cs_yolo_train
+#PBS -l select=1:ncpus=4:mem=16gb
+#PBS -l walltime=08:00:00
+#PBS -j oe
+#PBS -o /Data1/cse_24203016/construction_site/logs/yolo_$PBS_JOBID.log
+
+cd /Data1/cse_24203016/construction_site
+
+# Full path to conda environment python
+PYTHON=/Data1/cse_24203016/.conda/envs/construction/bin/python
+
+export CUDA_VISIBLE_DEVICES=MIG-9b919b48-2562-5791-8778-080ddb153351
+
+$PYTHON scripts/08_train_yolo.py
