@@ -1,0 +1,58 @@
+Ultralytics 8.4.38 🚀 Python-3.10.20 torch-2.7.1+cu118 CPU (AMD EPYC 9354 32-Core Processor)
+Model summary (fused): 73 layers, 3,009,158 parameters, 0 gradients, 8.1 GFLOPs
+
+[34m[1mPyTorch:[0m starting from '/Data1/cse_24203016/construction_site/experiments/yolov8n_construction/weights/best.pt' with input shape (1, 3, 640, 640) BCHW and output shape(s) (1, 22, 8400) (6.0 MB)
+[31m[1mrequirements:[0m Ultralytics requirements ['onnxslim>=0.1.71', 'onnxruntime'] not found, attempting AutoUpdate...
+Collecting onnxslim>=0.1.71
+  Downloading onnxslim-0.1.91-py3-none-any.whl.metadata (10 kB)
+Collecting onnxruntime
+  Downloading onnxruntime-1.23.2-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.1 kB)
+Collecting colorama (from onnxslim>=0.1.71)
+  Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Requirement already satisfied: ml-dtypes in /Data1/cse_24203016/.conda/envs/construction/lib/python3.10/site-packages (from onnxslim>=0.1.71) (0.5.4)
+Requirement already satisfied: onnx in /Data1/cse_24203016/.conda/envs/construction/lib/python3.10/site-packages (from onnxslim>=0.1.71) (1.21.0)
+Requirement already satisfied: packaging in /Data1/cse_24203016/.conda/envs/construction/lib/python3.10/site-packages (from onnxslim>=0.1.71) (26.0)
+Requirement already satisfied: sympy>=1.13.1 in /Data1/cse_24203016/.conda/envs/construction/lib/python3.10/site-packages (from onnxslim>=0.1.71) (1.14.0)
+Requirement already satisfied: coloredlogs in /Data1/cse_24203016/.conda/envs/construction/lib/python3.10/site-packages (from onnxruntime) (15.0.1)
+Requirement already satisfied: flatbuffers in /Data1/cse_24203016/.conda/envs/construction/lib/python3.10/site-packages (from onnxruntime) (25.12.19)
+Requirement already satisfied: numpy>=1.21.6 in /Data1/cse_24203016/.conda/envs/construction/lib/python3.10/site-packages (from onnxruntime) (2.2.6)
+Requirement already satisfied: protobuf in /Data1/cse_24203016/.conda/envs/construction/lib/python3.10/site-packages (from onnxruntime) (7.34.1)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /Data1/cse_24203016/.conda/envs/construction/lib/python3.10/site-packages (from sympy>=1.13.1->onnxslim>=0.1.71) (1.3.0)
+Requirement already satisfied: humanfriendly>=9.1 in /Data1/cse_24203016/.conda/envs/construction/lib/python3.10/site-packages (from coloredlogs->onnxruntime) (10.0)
+Requirement already satisfied: typing_extensions>=4.7.1 in /Data1/cse_24203016/.conda/envs/construction/lib/python3.10/site-packages (from onnx->onnxslim>=0.1.71) (4.15.0)
+Downloading onnxslim-0.1.91-py3-none-any.whl (237 kB)
+Downloading onnxruntime-1.23.2-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (17.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.4/17.4 MB 52.4 MB/s  0:00:00
+Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Installing collected packages: colorama, onnxruntime, onnxslim
+
+Successfully installed colorama-0.4.6 onnxruntime-1.23.2 onnxslim-0.1.91
+
+[31m[1mrequirements:[0m AutoUpdate success ✅ 2.7s
+WARNING ⚠️ [31m[1mrequirements:[0m [1mRestart runtime or rerun command for updates to take effect[0m
+
+
+[34m[1mONNX:[0m starting export with onnx 1.21.0 opset 17...
+[34m[1mONNX:[0m slimming with onnxslim 0.1.91...
+[34m[1mONNX:[0m export success ✅ 3.7s, saved as '/Data1/cse_24203016/construction_site/experiments/yolov8n_construction/weights/best.onnx' (11.7 MB)
+
+Export complete (3.9s)
+Results saved to [1m/Data1/cse_24203016/construction_site/experiments/yolov8n_construction/weights[0m
+Predict:         yolo predict task=detect model=/Data1/cse_24203016/construction_site/experiments/yolov8n_construction/weights/best.onnx imgsz=640 
+Validate:        yolo val task=detect model=/Data1/cse_24203016/construction_site/experiments/yolov8n_construction/weights/best.onnx imgsz=640 data=/Data1/cse_24203016/construction_site/datasets/construction.yaml  
+Visualize:       https://netron.app
+[1;31m2026-04-19 13:14:29.444924498 [E:onnxruntime:Default, provider_bridge_ort.cc:2223 TryGetProviderInfo_TensorRT] /onnxruntime_src/onnxruntime/core/session/provider_bridge_ort.cc:1844 onnxruntime::Provider& onnxruntime::ProviderLibrary::Get() [ONNXRuntimeError] : 1 : FAIL : Failed to load library libonnxruntime_providers_tensorrt.so with error: libcublas.so.12: cannot open shared object file: No such file or directory
+[m
+ONNX exported: /Data1/cse_24203016/construction_site/experiments/yolov8n_construction/weights/best.onnx
+*************** EP Error ***************
+EP Error /onnxruntime_src/onnxruntime/python/onnxruntime_pybind_state.cc:560 void onnxruntime::python::RegisterTensorRTPluginsAsCustomOps(PySessionOptions&, const onnxruntime::ProviderOptions&) Please install TensorRT libraries as mentioned in the GPU requirements page, make sure they're in the PATH or LD_LIBRARY_PATH, and that your GPU is supported.
+ when using ['TensorrtExecutionProvider', 'CUDAExecutionProvider', 'CPUExecutionProvider']
+Falling back to ['CPUExecutionProvider'] and retrying.
+****************************************
+Active provider: CPUExecutionProvider
+
+=== ONNX Benchmark ===
+Provider:     CPUExecutionProvider
+Latency/img:  75.33 ms
+Throughput:   13.3 FPS
+Saved ? /Data1/cse_24203016/construction_site/outputs/onnx/benchmark.json

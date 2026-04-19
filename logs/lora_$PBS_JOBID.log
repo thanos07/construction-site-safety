@@ -1,0 +1,12 @@
+Model path: /Data1/cse_24203016/construction_site/models/florence2-base
+Device: cuda
+Loading processor...
+Loading Florence-2 model...
+trainable params: 884,736 || all params: 232,298,752 || trainable%: 0.3809
+Loading dataset...
+Traceback (most recent call last):
+  File "/Data1/cse_24203016/construction_site/scripts/09_lora_finetune.py", line 104, in <module>
+    full_dataset = CaptionDataset(CAP_JSON, IMG_DIR, processor)
+  File "/Data1/cse_24203016/construction_site/scripts/09_lora_finetune.py", line 36, in __init__
+    for img_id, caption in list(raw.items())[:max_n]:
+AttributeError: 'list' object has no attribute 'items'
